@@ -1,0 +1,44 @@
+@import 'src/global/variables';
+
+.AccordionSection {
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-template-rows: max-content max-content;
+
+  .button-container {
+    @include flex;
+    justify-content: center;
+
+    button {
+      border: none;
+      cursor: pointer;
+      background: none;
+      color: $text-color;
+      transition: opacity 300ms ease;
+      padding: 1rem;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .section-title {
+    @include flex;
+    justify-content: center;
+    padding-left: 1.25rem;
+
+    h2 {
+      font-size: 2rem;
+      color: $text-color;
+    }
+  }
+
+  .empty {
+  }
+
+  .children-container {
+    .children-content {
+    }
+  }
+}

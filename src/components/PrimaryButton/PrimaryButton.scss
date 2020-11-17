@@ -1,0 +1,23 @@
+@import 'src/global/variables';
+
+.PrimaryButton {
+  padding: 0.5rem 1.5rem;
+  background-color: $primary-color;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 300ms ease;
+
+  &:not(.disabled) {
+    &:hover,
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}

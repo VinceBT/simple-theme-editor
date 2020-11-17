@@ -1,0 +1,38 @@
+@import 'src/global/variables';
+
+.Home {
+  padding: 2rem;
+
+  h1 {
+    font-size: 4rem;
+    color: $primary-color;
+  }
+
+  .accordion {
+    max-width: 120rem;
+    margin-top: 2rem;
+
+    .field {
+      margin: 0.2rem 0;
+    }
+  }
+
+  .buttons-container {
+    @include flex;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    align-items: flex-start;
+
+    .saveButton {
+      margin-top: 1rem;
+    }
+
+    .resetButton {
+      margin-top: 1rem;
+    }
+
+    .autoSubmitButton {
+      margin-top: 1rem;
+    }
+  }
+}
